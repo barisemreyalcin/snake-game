@@ -3,23 +3,68 @@ html {
 }
 
 body {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.6rem;
+    text-align: center;
+    background-color: #fcffe6;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    background-color: #eebe11;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover, button:focus {
+    background-color: #f0c528;
+    transform: scale(1.02);
+}
+
+.container {
+    max-width: 50rem;
+    margin: 5rem auto 0;
+}
+
+.container img {
+    width: 7rem;
+}
+
+.container h1 {
+    font-size: 5rem;
+    color: #84a22a;
+    margin-top: 0;
+}
+
+.snake-container {
+    display: none;
+}
+
+.active {
+    display: block;
 }
 
 .grid {
     display: flex;
+    background-color: #faecb7;
+    margin: 0 auto;
     flex-wrap: wrap;
     width: 25rem;
     height: 25rem;
-    border: 2px solid #000;
+    border: 3px solid #000;
 }
 
 .snake {
-    background-color: green;
+    background-color: #84a22a;
 }
 
 .apple {
-    background-color: red;
+    background-color: #E81F42;
 }
 
 .grid .square {

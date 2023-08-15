@@ -1,6 +1,7 @@
 const gridEl = document.querySelector(".grid");
 const startBtn = document.getElementById("start");
 const scoreEl = document.getElementById("score");
+const snakeContainerEl = document.querySelector(".snake-container");
 let squaresArr = [];
 let currentSnake = [2, 1, 0];
 let direction = 1;
@@ -23,6 +24,7 @@ createGrid();
 currentSnake.forEach(index => squaresArr[index].classList.add("snake"));
 
 function startGame() {
+    snakeContainerEl.classList.add("active");
     currentSnake.forEach(index => squaresArr[index].classList.remove("snake"));
     squaresArr[appleIndex].classList.remove("apple");
     clearInterval(timerId);
